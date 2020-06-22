@@ -39,17 +39,43 @@
 
         <section>
             <form action="/login" method="post">
-            <h2>ПРОИЗВОДИТЕЛИ:</h2>
-                <input type="checkbox" name="manufacturers" value="Baxter of California" checked>Baxter of California<br>
-                <input type="checkbox" name="manufacturers" value="Mr Natty">Mr Natty<br>
-                <input type="checkbox" name="manufacturers" value="Suavecito">Suavecito<br>
-                <input type="checkbox" name="manufacturers" value="Malin+Goetz">Malin+Goetz<br>
-                <input type="checkbox" name="manufacturers" value="Murray’s">Murray’s<br>
-                <input type="checkbox" name="manufacturers" value="American Crew">American Crew
-            <h2>ГРУППЫ ТОВАРОВ:</h2>
-            <input type="radio" name="groups" value="Shaving accessories" checked>Бритвенные принадлежности<br>
-            <input type="radio" name="groups" value="Care products">Средства для ухода<br>
-            <input type="radio" name="groups" value="Accessories">Аксессуары<br>
+            <fieldset>
+            <legend>ПРОИЗВОДИТЕЛИ:</legend>
+            <ul>
+                <li><input type="checkbox" name="Baxter of California" id="Baxter of California" checked>
+                <label for="Baxter of California">Baxter of California</label>
+                </li>
+                <li><input type="checkbox" name="Mr Natty" id="Mr Natty">
+                <label for="Mr Natty">Mr Natty</label>
+                </li>
+                <li><input type="checkbox" name="Suavecito" id="Suavecito">
+                <label for="Suavecito">Suavecito</label>
+                </li>
+                <li><input type="checkbox" name="Malin+Goetz" id="Malin+Goetz">
+                <label for="Malin+Goetz">Malin+Goetz</label>
+                </li>
+                <li><input type="checkbox" name="Murray’s" id="Murray’s">
+                <label for="Murray’s">Murray’s</label>
+                </li>
+                <li><input type="checkbox" name="American Crew" id="American Crew">
+                <label for="American Crew">American Crew</label>
+                </li>
+            </ul>
+            </fieldset>
+            <fieldset>
+            <legend>ГРУППЫ ТОВАРОВ:</legend>
+            <ul>
+                <li><input type="radio" name="groups" value="Shaving" id="Shaving accessories" checked>
+                <label for="Shaving accessories">Бритвенные принадлежности</label>
+                </li>
+                <li><input type="radio" name="groups" value="Care" id="Care products">
+                <label for="Care products">Средства для ухода</label>
+                </li>
+                <li><input type="radio" name="groups" value="Accessories" id="Accessories">
+                <label for="Accessories">Аксессуары</label>
+                </li>
+            </ul>
+            </fieldset>
             <button name="submit">Показать</button>
             </form>
         </section>
@@ -110,9 +136,9 @@
         <div>
             <p>Давайте дружить!</p>
             <ul>
-                <li><a href="#">Вконтакте</a></li>
-                <li><a href="#">Фэйсбук</a></li>
-                <li><a href="#">Инстаграм</a></li>
+                <li><a href="#" aria-label="Вконтакте"></a></li>
+                <li><a href="#" aria-label="Фэйсбук"></a></li>
+                <li><a href="#" aria-label="Инстаграм"></a></li>
             </ul>
         </div>
         <p>

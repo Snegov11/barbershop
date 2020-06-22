@@ -20,7 +20,7 @@
             </ul>
             <ul>
                 <li>
-                    <button type="button">Войти</button>
+                    <a href="login.html">Войти</a>
                 </li>
             </ul>
         </nav>
@@ -96,21 +96,41 @@
             <h2>Записаться</h2>
             <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ
                 С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-            <!--Здесь будет форма-->
+            <form action="" method="posr">
+                <p>
+                <label for="date">Дата</label>
+                <input id="date" type="date" name="date" value="2019-10-08">
+                </p>
+                <p>
+                <label for="time">Время</label>   
+                <input type="time" name="time" id="time" value="10:00"> 
+                </p>
+                <p>
+                <label for="name">Ваше Имя</label>
+                <input type="name" name="name" id="name" value="" placeholder="Борода">    
+                </p>
+                <p>
+                <label for="phone">Телефон</label>
+                <input type="tel" name="phone" id="phone" value="" placeholder="+7 911 965 23 78">
+                </p>
+
+            <button type="submit">Отправить</button>
+            </form>
+            
         </section>
     </main>
 
     <footer>
             <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
             АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-            <a href="maps.html">КАК НАС НАЙТИ?</a><br>
+            <a href="map.html">КАК НАС НАЙТИ?</a><br>
             ТЕЛЕФОН: +7 (495) 666-02-66</p>
             <div>
                 <p>Давайте дружить!</p>
                 <ul>
-                    <li><a href="#">Вконтакте</a></li>
-                    <li><a href="#">Фэйсбук</a></li>
-                    <li><a href="#">Инстаграм</a></li>
+                    <li><a href="#" aria-label="Вконтакте"></a></li>
+                    <li><a href="#" aria-label="Фэйсбук"></a></li>
+                    <li><a href="#" aria-label="Инстаграм"></a></li>
                 </ul>
             </div>
             <p>
@@ -118,18 +138,7 @@
                 <a href="https://htmlacademy.ru/">HTML Academy</a>
             </p>
     </footer>
-
-    <section>
-        <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль!</p>
-        <!--Здесь будет форма-->
-        <button type="button">Закрыть</button>
-    </section>
-
-    <section>
-        <h2>Как до нас добарться?</h2>
-        <button type="button">Закрыть</button>
-    </section>
+    
 
 </body>
 </html>
