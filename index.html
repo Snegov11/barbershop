@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Барбершоп Бородинский</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     
-    <header>
-        <nav>
-            <a>
-            <img src="svg/index-logo.svg" width="368" height="200" alt="Логотип Барбершопа Бородинский">
-            </a>
+    <header class="header">
+        <nav class="nav">
             <ul>
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="price.html">Прайс-лист</a></li>
-                <li><a href="catalog.html">Магазин</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+                <li><a class="nav-item" href="info.html">Информация</a></li>
+                <li><a class="nav-item" href="news.html">Новости</a></li>
+                <li><a class="nav-item" href="price.html">Прайс-лист</a></li>
+                <li><a class="nav-item" href="catalog.html">Магазин</a></li>
+                <li><a class="nav-item" href="contacts.html">Контакты</a></li>
             </ul>
             <ul>
                 <li>
-                    <a href="login.html">Войти</a>
+                    <a class="nav-item" href="login.html">Войти</a>
                 </li>
             </ul>
+            
+            <a>
+            <img class="logo" src="svg/index-logo.svg" width="368" height="200" alt="Логотип Барбершопа Бородинский">
+            </a>
         </nav>
     </header>
 
     <main>
         <h1>Барбершоп Бородинский</h1>
-        <section>
+        <section class="advantages">
             <h2>Преимущества</h2>
             <ul>
                 <li>
@@ -50,24 +53,24 @@
             </ul>
         </section>
 
-        <section>
+        <section class="news">
             <h2>Новости</h2>
             <ul>
                 <li>
-                <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
-                <time datatime="2019-01-11">11 января</time>
+                <p class="news-text">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+                <time class="news-date" datatime="2019-01-11">11 января</time>
                 </li>
                 <li>
-                <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
-                <time datatime="2019-01-18">18 января</time>
+                <p class="news-text">В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+                <time class="news-date" datatime="2019-01-18">18 января</time>
                 </li>
                 <a href="news.html">Все новости</a>
             </ul>
         </section>
 
-        <section>
+        <section class="gallery">
             <h2>Фотогалерея</h2>
-            <figure>
+            <figure class="slide">
                 <a href="#">
                     <img src="/img/studio.jpg" width="286" height="164px" alt="Интерьер">
                 </a>
@@ -76,7 +79,7 @@
             <button type="button">Вперёд</button>
         </section>
 
-        <section>
+        <section class="contacts">
             <h2>Контактная информация</h2>
             <p>
                 БАРБЕРШОП «БОРОДИНСКИЙ»<br>  
@@ -92,7 +95,7 @@
             <a href="cotacts.html">Обратная связь</a>
         </section>
 
-        <section>
+        <section class="reservation">
             <h2>Записаться</h2>
             <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ
                 С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
@@ -113,14 +116,12 @@
                 <label for="phone">Телефон</label>
                 <input type="tel" name="phone" id="phone" value="" placeholder="+7 911 965 23 78">
                 </p>
-
             <button type="submit">Отправить</button>
             </form>
-            
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
             <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
             АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
             <a href="map.html">КАК НАС НАЙТИ?</a><br>
@@ -139,6 +140,5 @@
             </p>
     </footer>
     
-
 </body>
 </html>
