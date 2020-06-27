@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffffff;
+    text-transform: uppercase;
+
+    background-color: #000000;
+    background-image: url(/img/font2.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+    color:white;
+}
+.button {
+    font: inherit;
+
+    text-align: center;
+    color: #ffffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: black;
+    border: none;
+}
+.button:hover,
+.button:active,
+.button:active {
+    background-color: #663D15;
+}
+
+.nav {
+    font-size: 16px;
+    line-height: 20px;
+    color:white;
+
+    background-color: black;
+}
+.nav-li {
+    list-style: none;
+    color: white;
+}
+.nav-item focus,
+.nav-item hover 
+{
+    background-color: #242424;
+    color: white;
+}
+
+.advantages-list {
+    list-style: none;
+}
+.advantages-item {
+    text-align: center;
+}
+.advantages-item h3 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.news-item {
+    color: black;
+
+    font: inherit;
+
+    text-align: center;
+    color: #ffffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: black;
+    border: none;
+}
+.news-item:hover,
+.news-item:active,
+.news-item:active {
+    background-color: #663D15;
+}
+.box-1 {
+    color: black;
+    background-color: whitesmoke;
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+.box-1 h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+.text-list {
+    list-style: none;
+}
+.news-date {
+    text-transform: none;
+}
+.slide {
+    background-color: #cccccc;
+    border: 7px solid #ffffffff;
+}
+
+.reservation-item input{
+    font: inherit;
+
+    background-color: transparent;
+    border: 2px solid #0000;
+}
+.reservation-item input:focus {
+    border-color: #663d15;
+}
+
+.footer {
+    color: #ffffff;
+
+    background-color: #212121;
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+.footer a{
+    list-style: none;
+    color: #ffffff;
+    text-decoration: underline;   
+}
+.footer a:focus,
+.footer a:hover {
+    text-decoration: none;
+}
+.label {
+    text-align: center;
+}
+.label ul {
+    list-style: none;
+}
+.lable-icon {
+    color: #ffffff;
+}
+.footer-copyright {
+    text-align: center;
+}
+.footer-copyright button:focus,
+.footer-copyright button:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.login {
+    color: #000000;
+
+    background-color: #f8f3f0;
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+.login-h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    font: inherit;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+}
+.login-form input:focus {
+    background-color: #663d15;
+}
+.chekbox-main:hover,
+.chekbox-main:focus {
+    color: #663d15;
+}
+.checkbox-link {
+    color: inherit;
+    text-decoration: underline;
+}
+.checkbox-link:hover,
+.checkbox-link:focus {
+    text-decoration: none;
+}
+
+
+

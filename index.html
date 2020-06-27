@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Барбершоп Бородинский</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -11,41 +12,43 @@
     <header class="header">
         <nav class="nav">
             <ul>
-                <li><a class="nav-item" href="info.html">Информация</a></li>
-                <li><a class="nav-item" href="news.html">Новости</a></li>
-                <li><a class="nav-item" href="price.html">Прайс-лист</a></li>
-                <li><a class="nav-item" href="catalog.html">Магазин</a></li>
-                <li><a class="nav-item" href="contacts.html">Контакты</a></li>
+                <li class="nav-li"><a class="nav-item" href="info.html">Информация</a></li>
+                <li class="nav-li"><a class="nav-item" href="news.html">Новости</a></li>
+                <li class="nav-li"><a class="nav-item" href="price.html">Прайс-лист</a></li>
+                <li class="nav-li" ><a class="nav-item" href="catalog.html">Магазин</a></li>
+                <li class="nav-li"><a class="nav-item" href="contacts.html">Контакты</a></li>
             </ul>
             <ul>
-                <li>
+                <li class="nav-li">
                     <a class="nav-item" href="login.html">Войти</a>
                 </li>
             </ul>
             
+            
+        </nav>
+    </header>
+
             <a>
             <img class="logo" src="svg/index-logo.svg" width="368" height="200" alt="Логотип Барбершопа Бородинский">
             </a>
-        </nav>
-    </header>
 
     <main>
         <h1>Барбершоп Бородинский</h1>
         <section class="advantages">
             <h2>Преимущества</h2>
-            <ul>
-                <li>
+            <ul class="advantages-list">
+                <li class="advantages-item">
                     <h3>Быстро</h3>
                     <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И 
                         ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
                 </li>
-                <li>
+                <li class="advantages-item">
                     <h3>Круто</h3>
                     <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
                         МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
                         ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
                 </li>
-                <li>
+                <li class="advantages-item">
                     <h3>Дорого</h3>
                     <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. 
                         К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
@@ -53,18 +56,19 @@
             </ul>
         </section>
 
+        <div class="box-1">
         <section class="news">
             <h2>Новости</h2>
             <ul>
-                <li>
+                <li class="text-list">
                 <p class="news-text">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
                 <time class="news-date" datatime="2019-01-11">11 января</time>
                 </li>
-                <li>
+                <li class="text-list">
                 <p class="news-text">В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
                 <time class="news-date" datatime="2019-01-18">18 января</time>
                 </li>
-                <a href="news.html">Все новости</a>
+                <a class="news-item" href="news.html">Все новости</a>
             </ul>
         </section>
 
@@ -75,10 +79,12 @@
                     <img src="/img/studio.jpg" width="286" height="164px" alt="Интерьер">
                 </a>
             </figure>
-            <button type="button">Назад</button>
-            <button type="button">Вперёд</button>
+            <button class="button" type="button">Назад</button>
+            <button class="button" type="button">Вперёд</button>
         </section>
+        </div>
 
+        <div class="box-1">
         <section class="contacts">
             <h2>Контактная информация</h2>
             <p>
@@ -91,8 +97,8 @@
                 ПН—ПТ: С 10:00 ДО 22:00<br> 
                 СБ—ВС: С 10:00 ДО 19:00
             </p>
-            <a href="map.html">Как проехать</a>
-            <a href="cotacts.html">Обратная связь</a>
+            <a class="button" href="map.html">Как проехать</a>
+            <a class="button" href="cotacts.html">Обратная связь</a>
         </section>
 
         <section class="reservation">
@@ -102,23 +108,24 @@
             <form action="" method="posr">
                 <p>
                 <label for="date">Дата</label>
-                <input id="date" type="date" name="date" value="2019-10-08">
+                <input class="reservation-item" id="date" type="date" name="date" value="2019-10-08">
                 </p>
                 <p>
                 <label for="time">Время</label>   
-                <input type="time" name="time" id="time" value="10:00"> 
+                <input class="reservation-item" type="time" name="time" id="time" value="10:00"> 
                 </p>
                 <p>
                 <label for="name">Ваше Имя</label>
-                <input type="name" name="name" id="name" value="" placeholder="Борода">    
+                <input class="reservation-item" type="name" name="name" id="name" value="" placeholder="Борода">    
                 </p>
                 <p>
                 <label for="phone">Телефон</label>
-                <input type="tel" name="phone" id="phone" value="" placeholder="+7 911 965 23 78">
+                <input class="reservation-item" type="tel" name="phone" id="phone" value="" placeholder="+7 911 965 23 78">
                 </p>
-            <button type="submit">Отправить</button>
+            <button class="button" type="submit">Отправить</button>
             </form>
         </section>
+        </div>
     </main>
 
     <footer class="footer">
@@ -126,19 +133,49 @@
             АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
             <a href="map.html">КАК НАС НАЙТИ?</a><br>
             ТЕЛЕФОН: +7 (495) 666-02-66</p>
-            <div>
+            <div class="label">
                 <p>Давайте дружить!</p>
                 <ul>
-                    <li><a href="#" aria-label="Вконтакте"></a></li>
-                    <li><a href="#" aria-label="Фэйсбук"></a></li>
-                    <li><a href="#" aria-label="Инстаграм"></a></li>
+                    <li><a class="lable-icon" href="#" aria-label="Вконтакте">Вконтакте</a></li>
+                    <li><a class="lable-icon" href="#" aria-label="Фэйсбук">Фэйсбук</a></li>
+                    <li><a class="lable-icon" href="#" aria-label="Инстаграм">Инстаграм</a></li>
                 </ul>
             </div>
-            <p>
+            <p class="footer-copyright"> 
                 Разработано:
-                <a href="https://htmlacademy.ru/">HTML Academy</a>
+                <a class="button" href="https://htmlacademy.ru/">HTML Academy</a>
             </p>
     </footer>
+
+    <section class="login">
+        <h2 class="login-h2">Личный кабинет</h2>
+        <p>Введите свой логин и пароль.</p>
+        <form class="login-form" action="" method="posr">
+            <p>
+            <label class="label-login" for="user-login">Логин</label>
+            <input class="login" type="text" name="login" placeholder="user@mail.ru">
+            </p>
+            <p>
+            <label class="label-password" for="user-password">Пароль</label>   
+            <input class="password" type="password" name="password" value="*************"> 
+            </p>
+            <p class="chekbox-main">
+                <input class="login-chekbox" type="checkbox" name="remember" id="login-password-info">
+                <label class="remember" for="login-password-info">Запомните меня</label>
+                <a class="checkbox-link" href="#">Я забыл пароль</a>
+            </p>
+            <button class="button" type="submit">Войти</button>
+        </form>
+        <button class="button" type="button">Закрыть</button>
+    </section>
+
+    <section class="map">
+        <h2 class="map-h2">Как до нас добарться?</h2>
+        <p>
+            <img src="/img/map.jpg" width="700" height="500" alt="Офис компании по адресу......">
+        </p>
+        <button class="button" type="button">Закрыть</button>
+    </section>
     
 </body>
 </html>
