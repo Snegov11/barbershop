@@ -15,10 +15,12 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
 }
+
 a {
     text-decoration: none;
     color:white;
 }
+
 .button {
     font: inherit;
 
@@ -36,12 +38,51 @@ a {
     background-color: #663D15;
 }
 
+.header {
+    min-height: 285px;
+}
+
 .nav {
     font-size: 16px;
     line-height: 20px;
     color:white;
 
+    min-height: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: transparent;
+}
+.logo {
+    width: 371;
+    height: 153;
+    order: 2;
+}
+.nav-cont {
+    width: 100%;
+    margin-bottom: 60px;
+    min-height: 70px;
     background-color: black;
+}
+.nav-cont-2 {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.nav-cont .nav-cont-2 {
+    display: flex;
+    justify-content: space-between;
+}
+.ul-nav {
+    width: 620px;
+    margin: 0px;
+    padding: 8px;
+    list-style: none;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav-li {
     list-style: none;
@@ -53,11 +94,40 @@ a {
     background-color: #242424;
     color: white;
 }
+.ul-login {
+    width: 140px;
+    margin: 0px;
+    padding: 8px;
+    list-style: none;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list {
+    opacity: 0;
+    margin: 0px;
+    padding: 0px;
+}
+.list-2 {
+    opacity: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
 
 .advantages-list {
     list-style: none;
+    margin: 0px;
+    padding: 0px;
+    height: 192px;
+    margin-bottom: 83px;
+
+    display: flex;
+    justify-content: space-between;
 }
 .advantages-item {
+    width: 300px;
     text-align: center;
 }
 .advantages-item h3 {
@@ -65,6 +135,22 @@ a {
     line-height: 42px;
 }
 
+.box-1 {
+    background-image: none;
+    background-color: transparent;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.news {
+    width: 380px;
+    min-height: 315px;
+}
+.gallery {
+    width: 300px;
+    min-height: 315px;
+}
 .news-item {
     color: black;
 
@@ -103,7 +189,6 @@ a {
     background-color: #cccccc;
     border: 7px solid #ffffffff;
 }
-
 .reservation-item input{
     font: inherit;
 
@@ -120,6 +205,24 @@ a {
     background-color: #212121;
     background-position: 0 0;
     background-repeat: repeat;
+
+    margin-top: 65px;
+    min-height: 180px;
+    padding: 60px 0;
+}
+.footer-cont {
+     margin: 0px;
+     min-height: 100px;
+     display: flex;
+}
+.contacts-footer {
+    margin: 0px;
+    min-height: 100px;
+    width: 330px;
+    margin-right: 80px;
+}
+.friend {
+    margin: 0px;
 }
 .footer a{
     list-style: none;
@@ -132,6 +235,8 @@ a {
 }
 .label {
     text-align: center;
+    min-height: 100px;
+    width: 145px;
 }
 .label ul {
     list-style: none;
@@ -140,7 +245,11 @@ a {
     color: #ffffff;
 }
 .footer-copyright {
+    width: 150px;
     text-align: center;
+    margin: 0px;
+    min-height: 100px;
+    margin-left: auto;
 }
 .footer-copyright button:focus,
 .footer-copyright button:hover {
