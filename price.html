@@ -10,7 +10,7 @@
 <body class="price-body">
 
     <header class="price-header">
-        <nav class="price-nav">
+        <nav class="price-nav nav">
             <div class="nav__wrap">
                 <div class="nav__wrap_cont-price">
                    <a class="price-logo" href="index.html">
@@ -19,13 +19,13 @@
             <ul class="wrap__cont_menu">
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Новости</a></li>
-                <li><a href="price.html">Прайс-лист</a></li>
+                <li><a class="active" href="price.html">Прайс-лист</a></li>
                 <li><a href="shop.html">Магазин</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
             <ul class="wrap__cont_login">
                 <li>
-                    <a class="cont__login_item" href="login.html">Войти</a>
+                    <a class="cont__login_item" href="">Войти</a>
                 </li>
             </ul>
             </div>
@@ -96,7 +96,7 @@
         <div class="footer__cont">
             <p class="footer__cont_text">БАРБЕРШОП «БОРОДИНСКИЙ»<br>
             АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-            <a href="map.html">КАК НАС НАЙТИ?</a><br>
+            <a class="footer__cont_map" href="">КАК НАС НАЙТИ?</a><br>
             ТЕЛЕФОН: +7 (495) 666-02-66</p>
             <div class="footer__cont_icon">
                 <p>Давайте дружить!</p>
@@ -121,6 +121,41 @@
             </p>
             </div>
     </footer>
+
+    <section class="modal modal-login">
+        <h2 class="login-title">Личный кабинет</h2>
+        <p class="login-description">Введите свой логин и пароль.</p>
+        <form class="form__login" action="https://echo.htmlacademy.ru/" method="post">
+            <p>
+            <label for="user-login"></label>
+            <input class="login" type="text" name="login" placeholder="user@mail.ru">
+            </p>
+            <p>
+            <label for="user-password"></label>   
+            <input class="password" type="password" name="password" placeholder="*************"> 
+            </p>
+            <p class="form__chekbox">
+                <label class="chekbox__cont">
+                <input class="visually-hidden" type="checkbox" name="remember">
+                <span class="remember"></span>
+                Запомните меня</label>
+                <a class="checkbox__link" href="#">Я забыл пароль</a>
+            </p>
+            <button class="button" type="submit">Войти</button>
+        </form>
+        <button class="modal-close" type="button"></button>
+        <span class="visually-hidden">Закрыть</span>
+    </section>
+
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добарться?</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.590034669484!2d30.31279881559026!3d59.93894466903658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963110686a7c55%3A0xa2950fb15748e884!2z0JTQstC-0YDRhtC-0LLQsNGPINC_0LvQvtGJ0LDQtNGM!5e0!3m2!1sru!2sru!4v1595446515106!5m2!1sru!2sru" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <button class="modal-close" type="button"></button>
+        <span class="visually-hidden">Закрыть</span>
+    </section>
     
+    <script src="/js/map.js"></script>
+    <script src="/js/popup.js"></script>
+
 </body>
 </html>
